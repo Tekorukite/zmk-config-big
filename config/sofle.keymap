@@ -60,7 +60,7 @@
             compatible = "zmk,behavior-sensor-rotate";
             label = "MSC_SCR5";
             #sensor-binding-cells = <0>;
-            bindings = <&msc MOVE_Y -5>, <&msc MOVE_Y 5>;
+            bindings = <&msc MOVE_Y(-5)>, <&msc MOVE_Y(5)>;
         };
     };
 
