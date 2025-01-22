@@ -138,7 +138,7 @@ layers:
   - ''
   - ''
   - Reset
-  - ''
+  - {type: held}
   - ''
   - ''
   - ''
@@ -168,8 +168,8 @@ layers:
   - ''
   - ''
   - {t: '$$mdi:led-on$$', h: '$$mdi:page-next-outline$$', type: tap_dance}
-  - ''
-  - ''
+  - {t: '$$mdi:led-on$$', h: '$$mdi:page-previous-outline$$', type: tap_dance}
+  - {t: '$$mdi:led-on$$', h: '$$mdi:toggle-switch$$', s: '$$mdi:led-outline$$', type: toggle}
   - {t: '$$mdi:led-outline$$', s: '$$mdi:palette$$', type: sym_by_sym}
   - {t: '$$mdi:led-on$$', s: '$$mdi:eyedropper$$', type: sym_by_sym}
   - {t: '$$mdi:led-on$$', s: '$$tabler:brightness-up$$', type: sym_by_sym}
@@ -179,13 +179,13 @@ layers:
   - ''
   - ''
   - ''
-  - {type: held}
+  - ''
+  - {t: BAS, h: toggle}
   - ''
   - ''
-  - {type: held}
   - ''
   - ''
   - ''
 combos:
 - p: [53, 56]
-  k: {t: ADJ, h: ADJ}
+  k: {t: ADJ, h: toggle}
