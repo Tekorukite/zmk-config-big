@@ -1,8 +1,8 @@
 layout: {qmk_keyboard: sofle/rev1}
 layers:
-  BAS: ['`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '-', Esc, Q, W, E, R, T, Y, U, I, O, P, '$$mdi:backspace-outline$$', ↹, A, S, D, F, G, H, J, K, L,
-    ;, '''', '$$mdi:apple-keyboard-shift$$', Z, X, C, V, B, MUTE, MUTE, N, M, ',', ., /, '$$mdi:apple-keyboard-shift$$', '$$mdi:apple-keyboard-command$$', '$$mdi:apple-keyboard-option$$',
-    '$$mdi:apple-keyboard-control$$', LOW, ⏎, ␣, RAI, '$$mdi:apple-keyboard-control$$', '$$mdi:apple-keyboard-option$$', '$$mdi:apple-keyboard-command$$']
+  BAS: ['`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', BACKSPACE, Esc, Q, W, E, R, T, Y, U, I, O, P, DELETE, ↹, A, S, D, F, G, H, J, K, L, ;, '''', '$$mdi:apple-keyboard-shift$$',
+    Z, X, C, V, B, MUTE, MUTE, N, M, ',', ., /, '$$mdi:apple-keyboard-shift$$', '$$mdi:apple-keyboard-command$$', '$$mdi:apple-keyboard-option$$', '$$mdi:apple-keyboard-control$$',
+    '&low_red', ⏎, ␣, '&rai_blu', '$$mdi:apple-keyboard-control$$', '$$mdi:apple-keyboard-option$$', '$$mdi:apple-keyboard-command$$']
   LOW:
   - '`'
   - F1
@@ -16,7 +16,7 @@ layers:
   - F9
   - F10
   - F11
-  - RAI
+  - '&rai_blu'
   - '1'
   - '2'
   - '3'
@@ -57,10 +57,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - '&rai_blu'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -83,9 +83,9 @@ layers:
   - CMENU
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Page Up
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - PAGE DOWN
+  - PAGE UP
   - {t: ▽, type: trans}
   - '0'
   - {t: ▽, type: trans}
@@ -118,10 +118,71 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - '&low_red'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  ADJ:
+  - Reset
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Reset
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: '$$mdi:led-on$$', h: '$$mdi:toggle-switch$$', s: '$$mdi:led-outline$$', type: toggle}
+  - Out BLE
+  - Out USB
+  - OUT TOG
+  - ''
+  - ''
+  - ''
+  - ''
+  - EP TOG
+  - ''
+  - ''
+  - ''
+  - {t: '$$mdi:led-on$$', h: '$$mdi:page-previous-outline$$', type: tap_dance}
+  - {t: '$$mdi:led-on$$', s: '$$mdi:palette$$', type: sym_by_sym}
+  - {t: '$$mdi:led-outline$$', s: '$$mdi:eyedropper$$', type: sym_by_sym}
+  - {t: '$$mdi:led-outline$$', s: '$$tabler:brightness-down$$', type: sym_by_sym}
+  - {t: '$$mdi:led-on$$', h: '$$mdi:speedometer$$', type: sym_by_sym}
+  - ''
+  - ''
+  - '&studio_unlock'
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: '$$mdi:led-on$$', h: '$$mdi:page-next-outline$$', type: tap_dance}
+  - ''
+  - ''
+  - {t: '$$mdi:led-outline$$', s: '$$mdi:palette$$', type: sym_by_sym}
+  - {t: '$$mdi:led-on$$', s: '$$mdi:eyedropper$$', type: sym_by_sym}
+  - {t: '$$mdi:led-on$$', s: '$$tabler:brightness-up$$', type: sym_by_sym}
+  - {t: '$$mdi:led-on$$', h: '$$mdi:speedometer-slow$$', type: sym_by_sym}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
