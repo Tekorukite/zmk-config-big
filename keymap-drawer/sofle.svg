@@ -554,6 +554,12 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <use href="#mdi:apple-keyboard-command" xlink:href="#mdi:apple-keyboard-command" x="-9" y="-9" height="18" width="18.0" class="key tap glyph mdi:apple-keyboard-command"/>
 </g>
+<g class="combo combopos-0">
+<path d="M448,274 l-113,0" class="combo"/>
+<path d="M448,274 l113,0" class="combo"/>
+<rect rx="6" ry="6" x="434" y="261" width="28" height="26" class="combo"/>
+<text x="448" y="274" class="combo tap"><tspan style="font-size: 86%">&amp;adj_td</tspan></text>
+</g>
 </g>
 </g>
 <g transform="translate(40, 398)" class="layer-LOW">
@@ -803,6 +809,12 @@ rect.held, rect.combo.held {
 <g transform="translate(756, 259)" class="key trans keypos-59">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
+</g>
+<g class="combo combopos-0">
+<path d="M448,274 l-113,0" class="combo"/>
+<path d="M448,274 l113,0" class="combo"/>
+<rect rx="6" ry="6" x="434" y="261" width="28" height="26" class="combo"/>
+<text x="448" y="274" class="combo tap"><tspan style="font-size: 86%">&amp;adj_td</tspan></text>
 </g>
 </g>
 </g>
@@ -1067,6 +1079,12 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
+<g class="combo combopos-0">
+<path d="M448,274 l-113,0" class="combo"/>
+<path d="M448,274 l113,0" class="combo"/>
+<rect rx="6" ry="6" x="434" y="261" width="28" height="26" class="combo"/>
+<text x="448" y="274" class="combo tap"><tspan style="font-size: 86%">&amp;adj_td</tspan></text>
+</g>
 </g>
 </g>
 <g transform="translate(40, 1193)" class="layer-ADJ">
@@ -1289,6 +1307,12 @@ rect.held, rect.combo.held {
 </g>
 <g transform="translate(756, 259)" class="key keypos-59">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+</g>
+<g class="combo combopos-0">
+<path d="M448,274 l-113,0" class="combo"/>
+<path d="M448,274 l113,0" class="combo"/>
+<rect rx="6" ry="6" x="434" y="261" width="28" height="26" class="combo"/>
+<text x="448" y="274" class="combo tap"><tspan style="font-size: 86%">&amp;adj_td</tspan></text>
 </g>
 </g>
 </g>
