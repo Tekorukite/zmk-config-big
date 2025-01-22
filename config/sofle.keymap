@@ -28,7 +28,7 @@
         };
         rai_blu: rai_blu {
             compatible = "zmk,behavior-macro";
-            #binding-cells = <1>;
+            #binding-cells = <0>;
             bindings =
                 <&macro_press &mo 2>,
                 <&macro_tap &rgb_ug RGB_COLOR_HSB(240,100,15)>,
@@ -41,7 +41,7 @@
         };
         adj_gre: adj_gre {
             compatible = "zmk,behavior-macro";
-            #binding-cells = <2>;
+            #binding-cells = <0>;
             bindings =
                 <&macro_press &mo 3>,
                 <&macro_tap &rgb_ug RGB_COLOR_HSB(120,100,15)>,
