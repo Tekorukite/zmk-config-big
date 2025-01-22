@@ -65,10 +65,12 @@
         hold_tap_low: hold_tap_low {
             compatible = "zmk,behavior-hold-tap";
             label = "HOLD_TAP_LOW";
-            bindings = <&mo>, <&to>;
+            bindings = <&mo>, <&tog>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
+            hold-while-undecided;
+            hold-while-undecided-linger;
         };
     };
 
