@@ -2,7 +2,7 @@ layout: {qmk_keyboard: sofle/rev1}
 layers:
   BAS: ['`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', BACKSPACE, Esc, Q, W, E, R, T, Y, U, I, O, P, DELETE, ↹, A, S, D, F, G, H, J, K, L, ;, '''', '$$mdi:apple-keyboard-shift$$',
     Z, X, C, V, B, MUTE, MUTE, N, M, ',', ., /, '$$mdi:apple-keyboard-shift$$', '$$mdi:apple-keyboard-command$$', '$$mdi:apple-keyboard-option$$', '$$mdi:apple-keyboard-control$$',
-    '&low_red', ⏎, ␣, '&rai_blu', '$$mdi:apple-keyboard-control$$', '$$mdi:apple-keyboard-option$$', '$$mdi:apple-keyboard-command$$']
+    LOW, ⏎, ␣, RAI, '$$mdi:apple-keyboard-control$$', '$$mdi:apple-keyboard-option$$', '$$mdi:apple-keyboard-command$$']
   LOW:
   - '`'
   - F1
@@ -16,7 +16,7 @@ layers:
   - F9
   - F10
   - F11
-  - '&rai_blu'
+  - RAI
   - '1'
   - '2'
   - '3'
@@ -57,10 +57,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&rai_blu'
+  - RAI
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -118,10 +118,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&low_red'
+  - LOW
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -179,10 +179,10 @@ layers:
   - ''
   - ''
   - ''
+  - {type: held}
   - ''
   - ''
-  - ''
-  - ''
+  - {type: held}
   - ''
   - ''
   - ''
