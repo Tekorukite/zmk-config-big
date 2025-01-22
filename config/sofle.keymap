@@ -19,6 +19,8 @@
             label = "INC_DEC_MSC";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+
+            tap-ms = <50>;
         };
 
         inc_dec_hue: inc_dec_hue {
@@ -39,21 +41,14 @@
             compatible = "zmk,behavior-tap-dance";
             label = "LOWER_TD";
             #binding-cells = <0>;
-            bindings = <&mo 1>, <&to 1>, <&to 0>;
+            bindings = <&hold_tap_low 1 1>, <&to 0>;
         };
 
         raise_td: raise_td {
             compatible = "zmk,behavior-tap-dance";
             label = "RAISE_TD";
             #binding-cells = <0>;
-            bindings = <&mo 2>, <&to 2>, <&to 0>;
-        };
-
-        adj_td: adj_td {
-            compatible = "zmk,behavior-tap-dance";
-            label = "ADJ_TD";
-            #binding-cells = <0>;
-            bindings = <&mo 3>, <&to 3>, <&to 0>;
+            bindings = <&hold_tap_low 2 2>, <&to 0>;
         };
 
         msc_scr5: msc_scr5 {
@@ -62,16 +57,26 @@
             #sensor-binding-cells = <0>;
             bindings = <&msc MOVE_Y(-5)>, <&msc MOVE_Y(5)>;
         };
+
+        hold_tap_low: hold_tap_low {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_TAP_LOW";
+            bindings = <&mo>, <&to>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <50>;
+            retro-tap;
+        };
     };
 
     combos {
         compatible = "zmk,combos";
 
         adj_combo {
-            bindings = <&adj_td>;
+            bindings = <&hold_tap_low 3 3>;
             key-positions = <53 56>;
             slow-release;
-            timeout-ms = <200>;
+            timeout-ms = <50>;
         };
     };
 
@@ -96,7 +101,7 @@
                    &kp LGUI  &kp LALT  &kp LCTRL  &lower_td  &kp RET       &kp SPACE   &raise_td  &kp RCTRL  &kp RALT   &kp RGUI
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>, <&msc_scr5>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>, <&inc_dec_msc>;
         };
 
         lower_layer {
