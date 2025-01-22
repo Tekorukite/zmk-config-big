@@ -12,6 +12,48 @@
 #include <dt-bindings/zmk/rgb.h>
 
 / {
+    macros {
+        low_red: low_red {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press &mo 1>,
+                <&macro_tap &rgb_ug RGB_COLOR_HSB(0,100,15)>,
+                <&macro_pause_for_release>,
+                <&macro_release &mo 1>,
+                <&macro_tap>,
+                <&rgb_ug RGB_COLOR_HSB(300,100,15)>;
+
+            label = "LOW_RED";
+        };
+        rai_blu: rai_blu {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <1>;
+            bindings =
+                <&macro_press &mo 2>,
+                <&macro_tap &rgb_ug RGB_COLOR_HSB(240,100,15)>,
+                <&macro_pause_for_release>,
+                <&macro_release &mo 2>,
+                <&macro_tap>,
+                <&rgb_ug RGB_COLOR_HSB(300,100,15)>;
+
+            label = "RAI_BLU";
+        };
+        adj_gre: adj_gre {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <2>;
+            bindings =
+                <&macro_press &mo 3>,
+                <&macro_tap &rgb_ug RGB_COLOR_HSB(120,100,15)>,
+                <&macro_pause_for_release>,
+                <&macro_release &mo 3>,
+                <&macro_tap>,
+                <&rgb_ug RGB_COLOR_HSB(300,100,15)>;
+
+            label = "ADJ_GRE";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -34,8 +76,8 @@
             >;
 
             sensor-bindings =
-                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
-                <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
+                <&inc_dec_kp C_VOL_DN C_VOL_UP>,
+                <&inc_dec_kp C_AC_SCROLL_DOWN C_AC_SCROLL_UP>;
         };
 
         lower_layer {
@@ -56,7 +98,9 @@
                       &trans     &trans       &trans    &trans     &trans    &trans  &mo 2      &trans    &trans           &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings =
+                <&inc_dec_kp C_VOL_DN C_VOL_UP>,
+                <&inc_dec_kp PAGE_DOWN PG_UP>;
         };
 
         raise_layer {
@@ -77,10 +121,13 @@
                           &trans        &trans        &trans        &mo 1         &trans    &trans  &trans    &trans         &trans       &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings =
+                <&inc_dec_kp C_VOL_DN C_VOL_UP>,
+                <&inc_dec_kp PG_DN PG_UP>;
         };
 
         ADJUST_LAYER {
+            display-name = "ADJ";
             bindings = <
 &sys_reset      &none              &none  &none  &none  &none                            &none            &none            &none            &none            &none  &sys_reset
 &none           &none              &none  &none  &none  &rgb_ug RGB_TOG                  &out OUT_BLE     &out OUT_USB     &out OUT_TOG     &none            &none  &none
