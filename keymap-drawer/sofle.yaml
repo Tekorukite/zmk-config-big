@@ -1,67 +1,9 @@
 layout: {qmk_keyboard: sofle/rev1}
 layers:
-  NORM:
-  - '`'
-  - '1'
-  - '2'
-  - '3'
-  - '4'
-  - '5'
-  - '6'
-  - '7'
-  - '8'
-  - '9'
-  - '0'
-  - BACKSPACE
-  - Esc
-  - Q
-  - W
-  - E
-  - R
-  - T
-  - Y
-  - U
-  - I
-  - O
-  - P
-  - DELETE
-  - ↹
-  - A
-  - S
-  - D
-  - F
-  - G
-  - H
-  - J
-  - K
-  - L
-  - ;
-  - ''''
-  - $$mdi:apple-keyboard-shift$$
-  - Z
-  - X
-  - C
-  - V
-  - B
-  - MUTE
-  - MUTE
-  - N
-  - M
-  - ','
-  - .
-  - /
-  - $$mdi:apple-keyboard-shift$$
-  - $$mdi:apple-keyboard-command$$
-  - $$mdi:apple-keyboard-option$$
-  - $$mdi:apple-keyboard-control$$
-  - {t: SHFT, h: SHFT}
-  - ⏎
-  - ␣
-  - {t: CTRL, h: CTRL}
-  - $$mdi:apple-keyboard-control$$
-  - $$mdi:apple-keyboard-option$$
-  - $$mdi:apple-keyboard-command$$
-  SHFT:
+  NORM: ['`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', BACKSPACE, Esc, Q, W, E, R, T, Y, U, I, O, P, DELETE, ↹, A, S, D, F, G, H, J, K, L, ;, '''', '$$mdi:apple-keyboard-shift$$',
+    Z, X, C, V, B, MUTE, MUTE, N, M, ',', ., /, '$$mdi:apple-keyboard-shift$$', '$$mdi:apple-keyboard-command$$', '$$mdi:apple-keyboard-option$$', '$$mdi:apple-keyboard-control$$',
+    LOW, ⏎, ␣, RAI, '$$mdi:apple-keyboard-control$$', '$$mdi:apple-keyboard-option$$', '$$mdi:apple-keyboard-command$$']
+  LOW:
   - '`'
   - F1
   - F2
@@ -74,7 +16,7 @@ layers:
   - F9
   - F10
   - F11
-  - {t: ADJ, h: ADJ}
+  - RAI
   - '1'
   - '2'
   - '3'
@@ -101,7 +43,7 @@ layers:
   - LEFT SHIFT
   - '-'
   - KP PLUS
-  - KP EQUAL
+  - '='
   - '{'
   - '}'
   - ''
@@ -118,11 +60,11 @@ layers:
   - {type: held}
   - ''
   - ''
-  - CTRL
+  - RAI
   - ''
   - ''
   - ''
-  CTRL:
+  RAI:
   - BT CLR
   - BT 1
   - BT 2
@@ -176,7 +118,7 @@ layers:
   - ''
   - ''
   - ''
-  - SHFT
+  - LOW
   - ''
   - ''
   - {type: held}
@@ -185,18 +127,18 @@ layers:
   - ''
   ADJ:
   - Reset
-  - {t: SHFT, h: toggle}
-  - {t: CTRL, h: toggle}
   - ''
   - ''
   - ''
-  - {t: NORM, h: toggle}
+  - ''
+  - ''
+  - ''
   - ''
   - ''
   - ''
   - BT CLR ALL
   - Reset
-  - {type: held}
+  - ''
   - BT 1
   - BT 2
   - BT 3
@@ -240,7 +182,7 @@ layers:
   - {type: held}
   - ''
   - ''
-  - ''
+  - {type: held}
   - ''
   - ''
   - ''
