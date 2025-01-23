@@ -1,9 +1,67 @@
 layout: {qmk_keyboard: sofle/rev1}
 layers:
-  BAS: ['`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', BACKSPACE, Esc, Q, W, E, R, T, Y, U, I, O, P, DELETE, ↹, A, S, D, F, G, H, J, K, L, ;, '''', '$$mdi:apple-keyboard-shift$$',
-    Z, X, C, V, B, MUTE, MUTE, N, M, ',', ., /, '$$mdi:apple-keyboard-shift$$', '$$mdi:apple-keyboard-command$$', '$$mdi:apple-keyboard-option$$', '$$mdi:apple-keyboard-control$$',
-    '&lower_td', ⏎, ␣, '&raise_td', '$$mdi:apple-keyboard-control$$', '$$mdi:apple-keyboard-option$$', '$$mdi:apple-keyboard-command$$']
-  LOW:
+  NORM:
+  - '`'
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - BACKSPACE
+  - Esc
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - DELETE
+  - ↹
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
+  - ;
+  - ''''
+  - $$mdi:apple-keyboard-shift$$
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - MUTE
+  - MUTE
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:apple-keyboard-command$$
+  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-control$$
+  - {t: SHFT, h: SHFT}
+  - ⏎
+  - ␣
+  - {t: CTRL, h: CTRL}
+  - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-command$$
+  SHFT:
   - '`'
   - F1
   - F2
@@ -16,7 +74,7 @@ layers:
   - F9
   - F10
   - F11
-  - RAI
+  - {t: ADJ, h: ADJ}
   - '1'
   - '2'
   - '3'
@@ -28,7 +86,7 @@ layers:
   - '9'
   - '0'
   - F12
-  - {t: ▽, type: trans}
+  - ''
   - '!'
   - '@'
   - '#'
@@ -40,60 +98,60 @@ layers:
   - (
   - )
   - '|'
-  - {t: ▽, type: trans}
-  - '='
+  - LEFT SHIFT
   - '-'
   - KP PLUS
+  - KP EQUAL
   - '{'
   - '}'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
   - '['
   - ']'
   - ;
   - ':'
   - \
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - RAI
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  RAI:
+  - RSHIFT
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - ''
+  - ''
+  - CTRL
+  - ''
+  - ''
+  - ''
+  CTRL:
   - BT CLR
   - BT 1
   - BT 2
   - BT 3
   - BT 4
   - BT 5
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - Insert
   - Print Scrn
   - CMENU
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Gui+R
+  - ''
+  - Ctl+Y
   - PAGE DOWN
   - PAGE UP
-  - {t: ▽, type: trans}
-  - '0'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - $$mdi:apple-keyboard-option$$
-  - $$mdi:apple-keyboard-control$$
-  - $$mdi:apple-keyboard-shift$$
-  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
+  - Ctl+A
+  - Ctl+Ctrl
+  - Gui+D
+  - Ctl+F
   - CLCK
   - ←
   - ↓
@@ -101,32 +159,11 @@ layers:
   - →
   - ⌦
   - $$mdi:backspace-outline$$
-  - {t: ▽, type: trans}
-  - UNDO
-  - CUT
-  - COPY
-  - PASTE
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - LOW
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  ADJ:
-  - Reset
+  - LEFT SHIFT
+  - Ctl+Z
+  - Ctl+X
+  - Ctl+C
+  - Ctl+V
   - ''
   - ''
   - ''
@@ -135,15 +172,36 @@ layers:
   - ''
   - ''
   - ''
+  - RIGHT SHIFT
   - ''
   - ''
-  - Reset
+  - ''
+  - SHFT
+  - ''
+  - ''
   - {type: held}
   - ''
   - ''
   - ''
+  ADJ:
+  - Reset
+  - {t: SHFT, h: toggle}
+  - {t: CTRL, h: toggle}
   - ''
-  - {t: '$$mdi:led-on$$', h: '$$mdi:toggle-switch$$', s: '$$mdi:led-outline$$', type: toggle}
+  - ''
+  - ''
+  - {t: NORM, h: toggle}
+  - ''
+  - ''
+  - ''
+  - BT CLR ALL
+  - Reset
+  - {type: held}
+  - BT 1
+  - BT 2
+  - BT 3
+  - BT 4
+  - BT 5
   - Out BLE
   - Out USB
   - OUT TOG
@@ -155,37 +213,34 @@ layers:
   - ''
   - ''
   - ''
-  - {t: '$$mdi:led-on$$', h: '$$mdi:page-previous-outline$$', type: tap_dance}
+  - ''
   - {t: '$$mdi:led-on$$', s: '$$mdi:palette$$', type: sym_by_sym}
   - {t: '$$mdi:led-outline$$', s: '$$mdi:eyedropper$$', type: sym_by_sym}
   - {t: '$$mdi:led-outline$$', s: '$$tabler:brightness-down$$', type: sym_by_sym}
   - {t: '$$mdi:led-on$$', h: '$$mdi:speedometer$$', type: sym_by_sym}
-  - ''
+  - {t: '$$mdi:led-on$$', h: '$$mdi:page-previous-outline$$', type: tap_dance}
   - ''
   - '&studio_unlock'
   - ''
   - ''
   - ''
   - ''
-  - {t: '$$mdi:led-on$$', h: '$$mdi:page-next-outline$$', type: tap_dance}
+  - ''
   - {t: '$$mdi:led-on$$', h: '$$mdi:page-previous-outline$$', type: tap_dance}
   - {t: '$$mdi:led-on$$', h: '$$mdi:toggle-switch$$', s: '$$mdi:led-outline$$', type: toggle}
   - {t: '$$mdi:led-outline$$', s: '$$mdi:palette$$', type: sym_by_sym}
   - {t: '$$mdi:led-on$$', s: '$$mdi:eyedropper$$', type: sym_by_sym}
   - {t: '$$mdi:led-on$$', s: '$$tabler:brightness-up$$', type: sym_by_sym}
   - {t: '$$mdi:led-on$$', h: '$$mdi:speedometer-slow$$', type: sym_by_sym}
+  - {t: '$$mdi:led-on$$', h: '$$mdi:page-next-outline$$', type: tap_dance}
+  - ''
+  - ''
+  - ''
+  - ''
+  - {type: held}
   - ''
   - ''
   - ''
   - ''
   - ''
   - ''
-  - {t: BAS, h: toggle}
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-combos:
-- p: [53, 56]
-  k: {t: ADJ, h: toggle}
