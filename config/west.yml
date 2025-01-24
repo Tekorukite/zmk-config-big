@@ -5,6 +5,8 @@ manifest:
     # nice_oled - dongle_display!view - oled Adapter
     - name: mctechnology17
       url-base: https://github.com/mctechnology17
+    - name: tekorukite
+      url-base: https://github.com/tekorukite
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -12,7 +14,7 @@ manifest:
       import: app/west.yml
     # nice_oled
     - name: zmk-nice-oled
-      remote: mctechnology17
+      remote: tekorukite
       revision: main
     # oled Adapter
     - name: zmk-oled-adapter
